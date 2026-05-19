@@ -13,6 +13,8 @@ print(df.shape)
 print(df.head())
 print(df.dtypes)
 print(df.isnull().sum())
+# Exploring key column distributions to inform threshold decisions
+print(df.describe())
 
 
 # Filling with median instead of mean because ratings can be skewed
@@ -145,7 +147,7 @@ print(f"Thresholds - Low: <{q25:.3f}, High>{q75:.3f}")
 
 df['Loyal_DefA'] = (
   (df['Freq_Score']>=12) &
-  (df['Previous Purchases']>=25)&
+  (df['Previous Purchases']>=df['Previous Purchases'].median())&
   (df['Promo_Used']==0)
 ).astype(int)
 

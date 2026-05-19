@@ -19,6 +19,8 @@ df.to_sql('customers', conn, index = False, if_exists = 'replace')
 print("Database ready!")
 print("Total rows:", len(df))
 
+prev_purchase_median = int(df['Previous Purchases'].median())
+
 # Q1: Classifying customers into three types based on loyalty
 # Definition B and promo usage to identify genuine vs discount driven buyers
 # Genuinely Loyal → Loyal_DefB = 1
@@ -55,7 +57,7 @@ print(result1.to_string(index=False))
 # Helps identify entry point categories vs retention categories
 
 
-query2 = """
+query2 = f"""
 SELECT 
   Category,
   Season,
@@ -64,7 +66,7 @@ SELECT
   ROUND(AVG("Purchase Amount (USD)"),2) AS Avg_Spend,
   ROUND (AVG(Freq_Score), 2) AS Avg_Frequency,
   CASE
-    WHEN AVG("Previous Purchases") >= 25 THEN 'High Tenure'
+    WHEN AVG("Previous Purchases") >= {prev_purchase_median} THEN 'High Tenure'
     ELSE 'Low Tenure'
   END AS Tenure_Group
 FROM customers
@@ -139,7 +141,7 @@ SELECT
 FROM customers
 GROUP BY Location
 ORDER BY Avg_Promo_Rate ASC
-LIMIT 15
+
 """
 
 result3 = pd.read_sql(query3, conn)
