@@ -1,7 +1,11 @@
 # Customer Retention Playbook: From Promotional Dependency to Organic Loyalty
 
 ## Section 1 - Introduction
-This playbook translates our analysis of 3,900 customer transactions into two things the founding team can act on immediately: a plan for restructuring the discount program segment by segment, and a data-backed profile of the customer the brand should be acquiring more of.Every recommendation names a specific customer segment, states why the data supports the action, gives a timeline, and honestly states what we risk by doing it. Vague recommendations like "reduce discounts" do not appear in this document.The core finding motivating this playbook: nearly half the customer base (43%) buys only because of discounts, not because they love the brand. Left unaddressed, this threatens long-term margins and makes revenue dependent on continuous promotional spending.
+This playbook translates our analysis of 3,900 customer transactions into two things the founding team can act on immediately: a plan for restructuring the discount program segment by segment, and a data-backed profile of the customer the brand should be acquiring more of.
+
+Every recommendation names a specific customer segment, states why the data supports the action, gives a timeline, and honestly states what we risk by doing it. Vague recommendations like "reduce discounts" do not appear in this document.
+
+The core finding motivating this playbook: nearly half the customer base (43%) buys only because of discounts, not because they love the brand. Left unaddressed, this threatens long-term margins and makes revenue dependent on continuous promotional spending.
 
 ---
 
@@ -82,7 +86,7 @@ With a loyalty rate under 10%, this vast segment is not yet behaviorally insulat
 
 #### What to Do Instead of Increasing Discounts
 Do not attempt to stimulate this group by increasing discount depths, as empirical data proves that margin concessions fail to build deep organic loyalty. Instead, deploy non-discount engagement tactics:
-* Deploy algorithmic email campaigns matching their documented category and seasonal preferences.
+* Deploy targeted email campaigns matching their documented category and seasonal preferences.
 * Introduce a frequency-based (rather than spend-based) loyalty point system to incentivize repeat purchasing.
 * Establish an optimized free-shipping minimum order threshold to expand average basket sizes without cutting core product prices.
 
@@ -121,7 +125,7 @@ Closely track the **Mid-Tier Loyalty Rate Month-over-Month** and **Mid-Tier Aver
 ### Behavioral Profile
 The ideal customer profile systematically avoids the current subscription ecosystem — not because subscriptions are inherently negative, but because our subscription program has a 100% promo usage rate, meaning it attracts discount hunters rather than genuine brand loyalists. The subscription program needs restructuring before it can be used as an acquisition tool for this profile.
 
-Beyond subscription behavior, this customer carries a Satisfaction_Flag marked as Satisfied, settles purchases via digital payment methods (PayPal or Credit Card), buys entirely without promotional codes, and shops consistently across multiple seasons rather than only during sales periods.
+Beyond subscription behavior, this customer is consistently satisfied with their experience, settles purchases via digital payment methods (PayPal or Credit Card), buys entirely without promotional codes, and shops consistently across multiple seasons rather than only during sales periods.
 
 
 ### How to Acquire More of Them
@@ -160,15 +164,15 @@ Beyond subscription behavior, this customer carries a Satisfaction_Flag marked a
 
 ## Section 6 - What Success Looks Like
 
-### 3-Month Horizons
+### 3-Month Horizon
 * Baseline **Margin per Customer within the Low Value Tier** increases significantly due to the elimination of promotional leakage.
 * **High Value Tier purchase frequency remains stable above 30x per year**, validating that non-monetary perks are successfully replacing price discounts.
 
-### 6-Month Horizons
+### 6-Month Horizon
 * The **Mid Value Tier loyalty rate expands from its 8%–9% baseline toward a 15%+ target**, driven by personalized, non-discount engagement playbooks.
 * Top-funnel customer acquisition volumes in Arizona and Tennessee increase, lowering the blended customer acquisition cost (CAC) through high-affinity targeting.
 
-### 12-Month Horizons
+### 12-Month Horizon
 * The brand's total **organically loyal customer base expands from 1,059 to over 1,400 active profiles**.
 * The systemic **promotional dependency rate drops from 43% to under 35%**, structurally repairing gross margins.
 * Blended **average spend across the entire customer database increases from $59.76 to over $63.00**, driven by an optimized, premium customer mix.
