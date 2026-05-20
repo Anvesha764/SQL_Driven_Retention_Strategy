@@ -1,7 +1,7 @@
 # Customer Retention Playbook: From Promotional Dependency to Organic Loyalty
 
 ## Section 1 - Introduction
-This document serves as a definitive strategic playbook designed to guide the founding team through a deliberate transition from reactive, discount-driven operations to a data-backed customer retention framework. It contains an empirical analysis of customer behavioral data, mapping out distinct value tiers, assessing the financial impact of the current promotional architecture, and establishing a structured rollout for targeted interventions. The insights and tactical structures outlined herein hold themselves to a rigorous standard of internal consistency, ensuring that every operational recommendation is traceable back to transactional reality rather than corporate intuition. Ultimately, this playbook is motivated by a critical baseline discovery: the brand's current financial engine is heavily insulated by temporary bargain hunters rather than a sustainable pool of organic brand advocates, threatening long-term margins if left unaddressed.
+This playbook translates our analysis of 3,900 customer transactions into two things the founding team can act on immediately: a plan for restructuring the discount program segment by segment, and a data-backed profile of the customer the brand should be acquiring more of.Every recommendation names a specific customer segment, states why the data supports the action, gives a timeline, and honestly states what we risk by doing it. Vague recommendations like "reduce discounts" do not appear in this document.The core finding motivating this playbook: nearly half the customer base (43%) buys only because of discounts, not because they love the brand. Left unaddressed, this threatens long-term margins and makes revenue dependent on continuous promotional spending.
 
 ---
 
@@ -10,6 +10,7 @@ This document serves as a definitive strategic playbook designed to guide the fo
 * **Over 90% of High Value Tier customers exhibit ingrained brand loyalty** without requiring price incentives, yet between 41% and 47% of these premium transactions are being actively diluted by unnecessary promotional discounts.
 * **The current subscription program suffers from a 100% promotional code usage rate**, confirming that it functions operationally as a margin-draining discount program rather than a value-adding customer loyalty initiative.
 * **The Mid Value Tier represents the brand's largest unexploited growth lever**, encompassing 1,950 customers with a critically low 8% to 9% loyalty rate-making it the primary target for non-monetary retention strategies.
+* **Arizona and Tennessee show the strongest organic demand**, with loyalty rates above 35% and promo usage below 37% — proving genuine brand pull exists in specific markets that the brand has not yet deliberately targeted.
 
 ---
 
@@ -64,7 +65,9 @@ Simultaneously replace these price cuts with premium, non-monetary brand perks:
 Monitor the **Month-over-Month Purchase Frequency of the High Value Tier**. If the frequency metric drops by more than 15% during the rollout window, temporarily pause the step-downs. The operational target is to protect and maintain their baseline of 35 transactions per year over a 90-day stabilization cycle.
 
 #### Trade-Off & Risk Mitigation
-* **Risk:** If the gradual transition is executed poorly, the brand risks alienating its most profitable core, jeopardizing a highly concentrated revenue stream (974 × $68.50 × 35 orders/year).
+* **Risk:** If the transition fails, the brand risks alienating its 
+most valuable segment — 974 customers spending $68-69 per 
+transaction on average.
 * **Mitigation:** The segment's existing 90%+ organic loyalty score indicates a minimal risk of outright churn. Upgrading their experience via high-status, non-monetary incentives (free express shipping, early access) successfully replaces margin-eroding discounts with premium brand touchpoints that cost less to fulfill but build stronger long-term retention.
 
 ---
@@ -106,7 +109,7 @@ Closely track the **Mid-Tier Loyalty Rate Month-over-Month** and **Mid-Tier Aver
 * **Promo Dependency Score:** 0.00 (Pure organic buyers who consistently purchase at full retail margin).
 
 ### Geographic Profile
-* **Core Core Markets:** Arizona (boasting a 35.4% structural loyalty rate) and Tennessee (holding a 35.1% structural loyalty rate).
+* **Primary Markets:** Arizona (boasting a 35.4% structural loyalty rate) and Tennessee (holding a 35.1% structural loyalty rate).
 * **Secondary Expansion Markets:** Virginia, Michigan, and Rhode Island. 
 * *Strategic Note:* These specific geographies are highly profitable because they combine elevated average ticket sizes with minimal promotional sensitivity, proving genuine brand pull independent of markdown strategies.
 
@@ -116,7 +119,10 @@ Closely track the **Mid-Tier Loyalty Rate Month-over-Month** and **Mid-Tier Aver
 * **Seasonal Matrix:** Summer functions as the optimum window for high-value customer acquisition, while Winter serves as the critical period for driving long-term retention.
 
 ### Behavioral Profile
-The ideal customer profile systematically avoids entering the subscription ecosystem (as the current subscription framework correlates heavily with discount hunting). They carry an explicit `Satisfaction_Flag` marked as **Satisfied**, settle balances via digital gateways (PayPal/Credit Card), purchase entirely independent of promotional codes, and distribute their shopping touchpoints fluidly across multiple seasons rather than surging during sales.
+The ideal customer profile systematically avoids the current subscription ecosystem — not because subscriptions are inherently negative, but because our subscription program has a 100% promo usage rate, meaning it attracts discount hunters rather than genuine brand loyalists. The subscription program needs restructuring before it can be used as an acquisition tool for this profile.
+
+Beyond subscription behavior, this customer carries a Satisfaction_Flag marked as Satisfied, settles purchases via digital payment methods (PayPal or Credit Card), buys entirely without promotional codes, and shops consistently across multiple seasons rather than only during sales periods.
+
 
 ### How to Acquire More of Them
 * **Channel Mix:** Allocate primary ad spend toward Instagram and TikTok, configuring audience parameters to match the high-performing 18–30 female demographic.
