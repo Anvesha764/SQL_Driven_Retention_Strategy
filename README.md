@@ -23,22 +23,12 @@ This repository contains an end-to-end customer intelligence framework built for
 
 ---
 
-## Key Findings
-* **The Promotional Leakage Core:** 43% of the active customer portfolio consists of discount hunters who drain margin and spend an average of $9 less per transaction than organically loyal buyers.
-* **High-Tier Cannibalization:** Over 90% of High Value Tier customers are already intrinsically loyal to the brand, yet 41% to 47% of their transactions are being dilute by unnecessary discount exposure.
-* **Untapped Regional Traction:** Arizona and Tennessee stand out as premium growth pockets, maintaining organic brand loyalty rates above 35% and promotional dependency scores below 37%.
-
----
-
 ## Tools Used
 * **Python (Pandas, NumPy):** Missing data handling, outlier detection, and analytical feature engineering.
 * **MySQL:** Structured query layer, database design, customer segmentation, and behavioral trend indexing.
 * **Power BI:** Data modeling, DAX engineering, and a four-panel visual interface mapping value distribution, category funnels, and geographic demand.
 
-  ---
-
-## Dataset
-[View Dataset](https://drive.google.com/file/d/1aJUEgbqHj-Rp4KPh2TRe8MtSMcHZ8Lqk/view)
+---
 
 ## Methodology Note - Dual Loyalty Definitions
 
@@ -49,3 +39,16 @@ Two competing definitions of customer loyalty were constructed and tested:
 - **Definition B (Behavioral Composite - Adopted):** A customer was classified as loyal if they met all three conditions: no promo code used, not discount-applied, AND previous purchases above median. This definition isolates *intrinsic* loyalty - customers who return and spend without needing a price incentive. It showed stronger correlation with higher average spend (+$8.65) and was grounded in observable behavioral signals rather than tenure alone.
 
 `Loyal_DefB` is used throughout all segmentation, SQL queries, and dashboard logic.
+
+---
+
+## Key Findings
+* **The Promotional Leakage Core:** 43% of the active customer portfolio consists of discount hunters who drain margin and spend an average of $9 less per transaction than organically loyal buyers.
+* **High-Tier Cannibalization:** Over 90% of High Value Tier customers are already intrinsically loyal to the brand, yet 41% to 47% of their transactions are being dilute by unnecessary discount exposure.
+* **Untapped Regional Traction:** Arizona and Tennessee stand out as premium growth pockets, maintaining organic brand loyalty rates above 35% and promotional dependency scores below 37%.
+
+---
+
+## Dataset
+[View Dataset](https://drive.google.com/file/d/1aJUEgbqHj-Rp4KPh2TRe8MtSMcHZ8Lqk/view)
+
