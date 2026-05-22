@@ -105,7 +105,7 @@ Closely track the **Mid-Tier Loyalty Rate Month-over-Month** and **Mid-Tier Aver
 ## Section 4 - Ideal Customer Profile
 
 ### Demographic Profile
-* **Primary Cohort:** Female consumers aged 18–30.
+* **Primary Cohort:** Female consumers aged 18-30.
 * **Secondary Cohort:** Female consumers aged 60+.
 * **Preferred Payment Method:** PayPal (Primary Engine) or Credit Card (Secondary Engine).
 * **Segment Loyalty Rate:** 38.5% baseline.
@@ -129,14 +129,14 @@ Beyond subscription behavior, this customer is consistently satisfied with their
 
 
 ### How to Acquire More of Them
-* **Channel Mix:** Allocate primary ad spend toward Instagram and TikTok, configuring audience parameters to match the high-performing 18–30 female demographic.
+* **Channel Mix:** Allocate primary ad spend toward Instagram and TikTok, configuring audience parameters to match the high-performing 18-30 female demographic.
 * **Geographic Targeting:** Restrict top-funnel acquisition campaigns to local networks within Arizona, Tennessee, and Virginia.
 * **Product Hook:** Lead creative assets with high-margin Accessories to establish an initial conversion point.
 * **Pricing Architecture:** Explicitly ban discount-led acquisition or introductory promo codes on these campaigns. Because this target profile buys based on brand alignment, price-dropping tactics will only dilute premium leads and attract low-value bargain hunters.
 
 ### Trade-Off of Focusing on This Profile
 * **Risk 1:** Tightening top-funnel targeting parameters to match this specific profile may compress gross acquisition volumes in the short term.
-* **Risk 2:** Prioritizing the 18–30 demographic leaves the highly loyal 60+ female cohort (which holds a 39.6% loyalty rate) unaddressed.
+* **Risk 2:** Prioritizing the 18-30 demographic leaves the highly loyal 60+ female cohort (which holds a 39.6% loyalty rate) unaddressed.
 * **Risk 3:** Hyper-focusing ad spend on 4 to 5 key states may cause the brand to lose digital visibility in unassigned regional markets.
 * **Mitigation:** Position this ideal profile framework as the brand's primary, high-efficiency conversion engine, while maintaining a broad, secondary brand awareness layer to capture older demographics and maintain a baseline national presence.
 
@@ -148,16 +148,16 @@ Beyond subscription behavior, this customer is consistently satisfied with their
    * Terminate all promotional discounts for the Low Value Tier.
    * Isolate 976 unprofitable accounts using value and promo triggers.
 
-2. **Phase 2: High Tier Value Transition (Months 1–3)**
+2. **Phase 2: High Tier Value Transition (Months 1-3)**
    * Execute 30% monthly step-downs of discounts for 974 High Value users.
    * Deploy non-monetary perks: free express shipping and early access.
 
-3. **Phase 3: Mid-Tier Nurturing & Retention (Months 1–6)**
+3. **Phase 3: Mid-Tier Nurturing & Retention (Months 1-6)**
    * Freeze promotional depths for 1,950 Mid-Tier customers.
    * Launch frequency incentives and personalized category email campaigns.
 
 4. **Phase 4: Organic Pipeline Acquisition (Ongoing)**
-   * Deploy ad spend targeting 18–30 female PayPal users in AZ and TN.
+   * Deploy ad spend targeting 18-30 female PayPal users in AZ and TN.
    * Enforce strict full-price entry positioning using Accessories.
 
 ---
@@ -169,7 +169,7 @@ Beyond subscription behavior, this customer is consistently satisfied with their
 * **High Value Tier purchase frequency remains stable above 30x per year**, validating that non-monetary perks are successfully replacing price discounts.
 
 ### 6-Month Horizon
-* The **Mid Value Tier loyalty rate expands from its 8%–9% baseline toward a 15%+ target**, driven by personalized, non-discount engagement playbooks.
+* The **Mid Value Tier loyalty rate expands from its 8%-9% baseline toward a 15%+ target**, driven by personalized, non-discount engagement playbooks.
 * Top-funnel customer acquisition volumes in Arizona and Tennessee increase, lowering the blended customer acquisition cost (CAC) through high-affinity targeting.
 
 ### 12-Month Horizon
