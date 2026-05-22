@@ -14,6 +14,10 @@ This repository contains an end-to-end customer intelligence framework built for
 * `phase1.py` - Python script managing data preparation, missing value treatment, and feature engineering logic.
 * `phase2.py` - Structured SQL query layer containing segmentation logic answering the brand's core business performance questions.
 * `customer_intelligence_dashboard.pbix` - Four-panel Power BI interactive dashboard optimized for non-technical founding teams.
+  - **Panel 1 — Customer Pyramid:** Value tier distribution (High/Mid/Low) across the 3,900-customer base
+  - **Panel 2 — Promo Dependency Funnel:** Retention rate plotted by segment; who needs discounts vs. who doesn't
+  - **Panel 3 — Geographic Opportunity Map:** States ranked by spend and organic loyalty rate to surface untapped markets
+  - **Panel 4 — Category Funnel:** Product categories by purchase history, showing entry-point vs. retention categories
 * `playbook.md` - Actionable retention playbook detailing the strategic promo sunset plan and data-backed ideal customer profile.
 * `executive_summary.md` - A concise, one-page business briefing distilling the critical insights, financial exposures, and tactical timelines for senior leadership.
 
@@ -30,3 +34,18 @@ This repository contains an end-to-end customer intelligence framework built for
 * **Python (Pandas, NumPy):** Missing data handling, outlier detection, and analytical feature engineering.
 * **MySQL:** Structured query layer, database design, customer segmentation, and behavioral trend indexing.
 * **Power BI:** Data modeling, DAX engineering, and a four-panel visual interface mapping value distribution, category funnels, and geographic demand.
+
+  ---
+
+## Dataset
+[View Dataset](https://drive.google.com/file/d/1aJUEgbqHj-Rp4KPh2TRe8MtSMcHZ8Lqk/view)
+
+## Methodology Note — Dual Loyalty Definitions
+
+Two competing definitions of customer loyalty were constructed and tested:
+
+- **Definition A (Threshold-Based):** A customer was classified as loyal if their `Previous Purchases` count exceeded the dataset median (25). This captured tenure but failed to distinguish between customers who returned organically versus those who returned only under discount incentives. Correlation with revenue was weak.
+
+- **Definition B (Behavioral Composite — Adopted):** A customer was classified as loyal if they met all three conditions: no promo code used, not discount-applied, AND previous purchases above median. This definition isolates *intrinsic* loyalty — customers who return and spend without needing a price incentive. It showed stronger correlation with higher average spend (+$8.65) and was grounded in observable behavioral signals rather than tenure alone.
+
+`Loyal_DefB` is used throughout all segmentation, SQL queries, and dashboard logic.
