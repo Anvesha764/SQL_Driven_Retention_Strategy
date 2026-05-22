@@ -1,15 +1,11 @@
-# Phase 2 — Customer Segmentation and Analysis (SQL)
-# Goal: Answer 5 key business questions using SQL queries
-# Input: dataset_engineered.csv (3900 customers, 28 columns)
-# Tool: SQLite in-memory database via sqlite3
+# Answer 5 key business questions using SQL queries
 # Each query answers one specific business question
 
 import pandas as pd
 import sqlite3
 
 # Loading engineered dataset into SQLite in-memory database
-# Using :memory: so database exists only during script execution
-# to_sql loads the dataframe as a table called 'customers'
+# Using :memory: so database exists only during script execution, to_sql loads the dataframe as a table called 'customers'
 
 
 df = pd.read_csv('dataset_engineered.csv')
@@ -23,9 +19,9 @@ prev_purchase_median = int(df['Previous Purchases'].median())
 
 # Q1: Classifying customers into three types based on loyalty
 # Definition B and promo usage to identify genuine vs discount driven buyers
-# Genuinely Loyal → Loyal_DefB = 1
-# Discount Hunter → used promo but not loyal
-# Neutral → no promo used but also not loyal
+# Genuinely Loyal - Loyal_DefB = 1
+# Discount Hunter - used promo but not loyal
+# Neutral - no promo used but also not loyal
 # Ordered by avg spend to immediately show which type is most valuable
 
 query1 = """
@@ -49,8 +45,7 @@ result1 = pd.read_sql(query1, conn)
 print("=== Q1: Loyal vs Discount Hunters ===")
 print(result1.to_string(index=False))
 
-# Q2: Grouping by category and season to find which combinations
-# attract experienced vs new customers using previous purchases as tenure proxy
+# Q2: Grouping by category and season to find which combinations attract experienced vs new customers using previous purchases as tenure proxy
 # Threshold of 25 (median) separates high vs low tenure groups
 # High tenure = above median purchase history = experienced returning customer
 # Low tenure = below median = newer or less engaged customer
@@ -78,10 +73,8 @@ result2 = pd.read_sql(query2, conn)
 print("=== Q2: Category and Season by Tenure ===")
 print(result2.to_string(index=False))
 
-# Q2B: Identifying which behavioral patterns today predict
-# high customer value over time
-# Grouping by subscription status, satisfaction and payment method
-# to find which combinations produce highest value customers
+# Q2B: Identifying which behavioral patterns today predict high customer value over time
+# Grouping by subscription status, satisfaction and payment method to find which combinations produce highest value customers
 # HAVING removes groups smaller than 20 for statistical reliability
 
 query2b = """
@@ -112,12 +105,9 @@ print(result2b.to_string(index=False))
 
 
 # Q3: Classifying states by promo usage rate and spend
-# We initially tried Promo_Dependency_Score for geographic classification
-# but state level averages were compressed into a narrow range (0.186-0.320)
-# because non promo users always score 0.0 pulling all state averages down
+# We initially tried Promo_Dependency_Score for geographic classification but state level averages were compressed into a narrow range (0.186-0.320) because non promo users always score 0.0 pulling all state averages down
 # Switched to direct Promo_Used rate which gives a wider more meaningful range
-# Threshold of 0.40 chosen because overall promo rate = 43%
-# States below 40% are genuinely less promo dependent than average
+# Threshold of 0.40 chosen because overall promo rate = 43%. States below 40% are genuinely less promo dependent than average
 # Threshold of $60 for spend because overall average spend = $59.76
 
 query3 = """
@@ -148,16 +138,14 @@ result3 = pd.read_sql(query3, conn)
 print("=== Q3: Geography - Organic vs Discount Driven ===")
 print(result3.to_string(index=False))
 
-# Q4: Decision framework for which segments to stop discounting
-# based on value tier and loyalty status together
-# Uses AVG(Loyal_DefB) as the decision trigger — loyalty rate per group
-# because Promo_Dependency_Score has structural limitations at group level
+# Q4: Decision framework for which segments to stop discounting based on value tier and loyalty status together
+# Uses AVG(Loyal_DefB) as the decision trigger - loyalty rate per group because Promo_Dependency_Score has structural limitations at group level
 # Thresholds:
-# High tier + loyalty rate >= 50% → Stop Discounting (already loyal)
-# High tier + loyalty rate < 50%  → Gradually Reduce (valuable but dependent)
-# Mid tier  + loyalty rate >= 30% → Keep Discounting (risk of losing volume)
-# Low tier  → Stop Discounting regardless (zero loyal customers)
-# Else      → Monitor (low dependency but not converting to loyal)
+# High tier + loyalty rate >= 50% - Stop Discounting (already loyal)
+# High tier + loyalty rate < 50%  - Gradually Reduce (valuable but dependent)
+# Mid tier + loyalty rate >= 30% - Keep Discounting (risk of losing volume)
+# Low tier - Stop Discounting regardless (zero loyal customers)
+# Else - Monitor (low dependency but not converting to loyal)
 
 query4 = """
 SELECT
@@ -196,11 +184,9 @@ print(result4.to_string(index=False))
 # Q5: Building ideal customer profile by combining age, gender and payment method
 # These three together give a specific enough picture for marketing targeting
 # Age group shows life stage, gender shows targeting direction
-# Payment method is a behavioral signal — PayPal users tend to be
-# digitally comfortable younger buyers, credit card users spend more freely
+# Payment method is a behavioral signal - PayPal users tend to be digitally comfortable younger buyers, credit card users spend more freely
 # HAVING COUNT(*) >= 20 removes statistically unreliable small groups
 # Ordered by loyalty percentage first then spend as tiebreaker
-# Goal: profile specific enough that a marketing team can act on it today
 query5 = """
 SELECT 
     CASE
